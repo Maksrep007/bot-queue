@@ -3,11 +3,11 @@ const TelegramApi = require('node-telegram-bot-api')
 const token = '7221374387:AAGKeT3rTYQZqhwB4NVib1JObaznaZ20-FA'
 const fs = require('fs')
 const bot = new TelegramApi(token, {polling: true})
-const pathToFile = ('./base.txt')
-const pathTwo = ('./informatika.txt')
-const pathCount = ('./count.txt')
-const pathCountTwo = ('./counttwo.txt')
-const pathInfTwo = ('./infTwo.txt')
+const pathToFile = ('files/base.txt')
+const pathTwo = ('files/informatika.txt')
+const pathCount = ('files/count.txt')
+const pathCountTwo = ('files/counttwo.txt')
+const pathInfTwo = ('files/infTwo.txt')
 const {gameOptions, writeOptions, regOptions ,writeCurrentOptions, helloOptions, writeCurrentOptionsTwo} = require('./options')
 /*const UserModel = require('./models');*/
 let currentName
