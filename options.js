@@ -16,5 +16,47 @@ module.exports = {
                 [{text: '0', callback_data: '0'}],
             ]
         })
+    },
+
+    writeOptions: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: 'ИНФ-1', callback_data: 'INF'}, {text: 'ИНФ-2', callback_data: 'INF2'}, {text: 'ОЦГ', callback_data: 'OCG'}, {text: 'ФИЗ', callback_data: 'FIZ'}]
+            ]
+        })
+    },
+    writeCurrentOptions: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: 'Записаться в конец очереди', callback_data: 'WRT'}],
+                [{text: 'Удалить себя из очереди', callback_data: 'DEL'}],
+                [{text: 'Обновить', callback_data: 'OBN'}],
+                [{text: 'Назад', callback_data: 'BACK'}]
+            ]
+        })
+    },
+    writeCurrentOptionsTwo: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: 'Записаться в конец очереди', callback_data: 'WRT2'}],
+                [{text: 'Удалить себя из очереди', callback_data: 'DEL2'}],
+                [{text: 'Обновить', callback_data: 'OBN2'}],
+                [{text: 'Назад', callback_data: 'BACK'}]
+            ]
+        })
+    },
+    helloOptions: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: 'Записаться', callback_data: 'ZAP'}]
+            ]
+        })
+    },
+    regOptions: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: 'Зарегистрироваться', callback_data: 'REG'}]
+            ]
+        })
     }
 }
